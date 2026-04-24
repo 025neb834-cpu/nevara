@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Nevara</title>
+    <link rel="shortcut icon" href="./media/image.svg" type="image/x-icon">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 25, 47, 0.6); /* navy overlay */
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    position: absolute;
+    top: 40px;
+    font-size: 42px;
+    letter-spacing: 8px;
+    color: #C9A646; /* gold */
+    font-family: 'Garamond', serif;
+}
+  
+
+/* FORM */
+.form-box {
+    width: 320px;
+    text-align: center;
+}
+
+.form-box h2 {
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #C9A646;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #b89535;
+}
+
+/* TEXT */
+.small-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* CREATE BUTTON */
+.create-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #C9A646;
+    background: transparent;
+    color: #C9A646;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.create-btn:hover {
+    background: #C9A646;
+    color: white;
+}
+
+.left {
+    width: 50%;
+    background: #0a1931; /* navy */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px; /* THIS creates spacing */
+}
+
+/* image container (important) */
+.image-box {
+    width: 100%;
+    max-width: 420px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* actual image */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDE (IMAGE) -->
+   <div class="left">
+    <div class="image-box">
+        <img src="./media2/gb.jpg" alt="Jewelry">
+    </div>
+</div>
+
+    <!-- RIGHT SIDE (LOGIN FORM) -->
+    <div class="right">
+
+        <!-- LOGO -->
+        <h1 class="logo">N E V A R A</h1>
+
+        <div class="form-box">
+            <h2>Sign In</h2>
+
+            <input type="email" placeholder="Email address">
+            <input type="password" placeholder="Password">
+
+            <button class="login-btn">SIGN IN</button>
+
+            <p class="small-text">Don't have an account?</p>
+            <button class="create-btn">Create Account</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
